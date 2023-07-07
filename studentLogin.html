@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Student Login</title> 
+  <style>
+    .login-box {
+      height: 500px;
+      width: 500px;
+      background-color: LightSkyBlue;
+    }
+    body{
+		background: lightgreen;
+	}
+    .button {
+      background-color: royalblue;
+      color: black;
+      border: none;
+      padding: 20px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 20px;
+      cursor: pointer;
+    }
+    .button:hover{
+		background-color: orange;
+	}
+    
+    input[type="date"] {
+  		font-size: 20px; 
+	}
+  </style>
+</head>
+<body>
+  <div class="login-box">
+    <center><img src="result.png" width="200" height="150"></center>
+    
+    <form method="post" action="studentHome.jsp">
+      <input type="text" name="rollNo" placeholder="Enter Roll Number" required="required">
+      <input type="date" name="dob" placeholder="Enter Date of Birth" required="required">
+      <input type="submit" name="submit" value="Search">
+    </form>
+
+    <center><h1><a href="index.html" class="button">Back</a></h1></center>
+  </div>
+</body>
+</html>
